@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FirstKotlinProject</string>
+    <string name="action_settings">Settings</string>
+    <string name="albums_fragment_title">Albums</string>
+    <string name="bio_fragment_title">Bio</string>
+    <string name="last_fm_api_key">e449fd0278b2930a742b8e3d8807c44a</string>
+</resources>
