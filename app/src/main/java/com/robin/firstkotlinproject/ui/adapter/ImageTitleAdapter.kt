@@ -7,7 +7,7 @@ import android.widget.TextView
 import com.robin.firstkotlinproject.R
 import com.robin.firstkotlinproject.ui.activity.ViewAnkoComponent
 import com.robin.firstkotlinproject.ui.custom.squareImageView
-import com.robin.firstkotlinproject.ui.entity.ImageTitle
+import com.robin.firstkotlinproject.ui.model.ImageTitle
 import com.robin.firstkotlinproject.ui.util.loadUrl
 import com.robin.firstkotlinproject.ui.util.setTextAppearanceC
 import org.jetbrains.anko.*

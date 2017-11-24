@@ -3,8 +3,8 @@ package com.robin.firstkotlinproject.ui.presenter
 import com.robin.firstkotlinproject.domain.interactor.base.Bus
 import com.robin.firstkotlinproject.domain.interactor.base.InteractorExecutor
 import com.robin.firstkotlinproject.domain.interactor.event.ArtistsEvent
-import com.robin.firstkotlinproject.ui.entity.ImageTitle
-import com.robin.firstkotlinproject.ui.entity.mapper.ImageTitleDataMapper
+import com.robin.firstkotlinproject.ui.model.ImageTitle
+import com.robin.firstkotlinproject.ui.model.mapper.ImageTitleDataMapper
 import com.robin.firstkotlinproject.ui.screens.event.GetRecommendedArtistsInteractor
 import com.robin.firstkotlinproject.ui.view.MainView
 

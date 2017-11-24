@@ -6,9 +6,9 @@ import com.robin.firstkotlinproject.domain.interactor.base.Bus
 import com.robin.firstkotlinproject.domain.interactor.base.InteractorExecutor
 import com.robin.firstkotlinproject.domain.interactor.event.ArtistDetailEvent
 import com.robin.firstkotlinproject.domain.interactor.event.TopAlbumsEvent
-import com.robin.firstkotlinproject.ui.entity.ImageTitle
-import com.robin.firstkotlinproject.ui.entity.mapper.ArtistDetailDataMapper
-import com.robin.firstkotlinproject.ui.entity.mapper.ImageTitleDataMapper
+import com.robin.firstkotlinproject.ui.model.ImageTitle
+import com.robin.firstkotlinproject.ui.model.mapper.ArtistDetailDataMapper
+import com.robin.firstkotlinproject.ui.model.mapper.ImageTitleDataMapper
 import com.robin.firstkotlinproject.ui.view.ArtistView
 
 /**

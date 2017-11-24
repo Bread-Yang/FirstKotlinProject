@@ -1,6 +1,6 @@
 package com.robin.firstkotlinproject.ui.view
 
-import com.robin.firstkotlinproject.ui.entity.ImageTitle
+import com.robin.firstkotlinproject.ui.model.ImageTitle
 
 /**
  * Created by Robin Yang on 11/3/17.

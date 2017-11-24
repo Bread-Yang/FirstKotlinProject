@@ -8,12 +8,12 @@ import android.support.v7.graphics.Palette
 import android.view.MenuItem
 import android.view.WindowManager
 import com.robin.firstkotlinproject.R
-import com.robin.firstkotlinproject.di.ApplicationComponent
-import com.robin.firstkotlinproject.di.subcomponent.detail.ArtistActivityModule
+import com.robin.firstkotlinproject.ui.di.ApplicationComponent
+import com.robin.firstkotlinproject.ui.di.subcomponent.detail.ArtistActivityModule
 import com.robin.firstkotlinproject.ui.activity.BaseActivity
 import com.robin.firstkotlinproject.ui.adapter.ArtistDetailPagerAdapter
-import com.robin.firstkotlinproject.ui.entity.ArtistDetail
-import com.robin.firstkotlinproject.ui.entity.ImageTitle
+import com.robin.firstkotlinproject.ui.model.ArtistDetail
+import com.robin.firstkotlinproject.ui.model.ImageTitle
 import com.robin.firstkotlinproject.ui.fragment.AlbumsFragmentContainer
 import com.robin.firstkotlinproject.ui.presenter.AlbumsPresenter
 import com.robin.firstkotlinproject.ui.presenter.ArtistPresenter

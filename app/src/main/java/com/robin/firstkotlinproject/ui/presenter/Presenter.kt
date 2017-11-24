@@ -3,7 +3,7 @@ package com.robin.firstkotlinproject.ui.presenter
 import com.robin.firstkotlinproject.domain.interactor.base.Bus
 
 /**
- * Created by Robin Yang on 11/17/17.
+ * Interface representing a Presenter in a model view presenter (MVP) pattern.
  */
 interface Presenter<out T> {
 

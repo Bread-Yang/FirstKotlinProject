@@ -3,7 +3,7 @@ package com.robin.firstkotlinproject.domain.interactor
 import com.robin.firstkotlinproject.domain.interactor.base.Event
 import com.robin.firstkotlinproject.domain.interactor.base.Interactor
 import com.robin.firstkotlinproject.domain.interactor.event.TopAlbumsEvent
-import com.robin.firstkotlinproject.domain.repository.AlbumRepository
+import com.robin.firstkotlinproject.data.repository.base.AlbumRepository
 
 /**
  * Created by Robin Yang on 11/20/17.

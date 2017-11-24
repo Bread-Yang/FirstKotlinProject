@@ -12,7 +12,7 @@ import com.robin.firstkotlinproject.ui.adapter.BaseAdapter
 import com.robin.firstkotlinproject.ui.adapter.ImageTitleAdapter
 import com.robin.firstkotlinproject.ui.custom.AutofitRecyclerView
 import com.robin.firstkotlinproject.ui.custom.autoFitRecycler
-import com.robin.firstkotlinproject.ui.entity.ImageTitle
+import com.robin.firstkotlinproject.ui.model.ImageTitle
 import com.robin.firstkotlinproject.ui.fragment.AlbumsFragmentContainer
 import com.robin.firstkotlinproject.ui.screens.style
 import org.jetbrains.anko.AnkoContext

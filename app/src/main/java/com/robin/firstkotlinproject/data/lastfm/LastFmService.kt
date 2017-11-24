@@ -1,6 +1,6 @@
 package com.robin.firstkotlinproject.data.lastfm
 
-import com.robin.firstkotlinproject.data.lastfm.model.LastFmResponse
+import com.robin.firstkotlinproject.data.lastfm.entity.LastFmResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 

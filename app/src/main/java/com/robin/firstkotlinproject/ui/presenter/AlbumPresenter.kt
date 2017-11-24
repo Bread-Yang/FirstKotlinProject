@@ -4,7 +4,7 @@ import com.robin.firstkotlinproject.domain.interactor.GetAlbumDetailInteractor
 import com.robin.firstkotlinproject.domain.interactor.base.Bus
 import com.robin.firstkotlinproject.domain.interactor.base.InteractorExecutor
 import com.robin.firstkotlinproject.domain.interactor.event.AlbumEvent
-import com.robin.firstkotlinproject.ui.entity.mapper.AlbumDetailDataMapper
+import com.robin.firstkotlinproject.ui.model.mapper.AlbumDetailDataMapper
 import com.robin.firstkotlinproject.ui.view.AlbumView
 
 /**

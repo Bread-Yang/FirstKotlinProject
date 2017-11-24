@@ -2,18 +2,21 @@ package com.robin.firstkotlinproject.ui.screens.main
 
 import android.os.Bundle
 import android.view.View
-import com.robin.firstkotlinproject.di.ApplicationComponent
-import com.robin.firstkotlinproject.di.subcomponent.main.MainActivityModule
+import com.robin.firstkotlinproject.ui.di.ApplicationComponent
+import com.robin.firstkotlinproject.ui.di.subcomponent.main.MainActivityModule
 import com.robin.firstkotlinproject.ui.activity.BaseActivity
 import com.robin.firstkotlinproject.ui.adapter.BaseAdapter
 import com.robin.firstkotlinproject.ui.adapter.ImageTitleAdapter
-import com.robin.firstkotlinproject.ui.entity.ImageTitle
+import com.robin.firstkotlinproject.ui.model.ImageTitle
 import com.robin.firstkotlinproject.ui.presenter.MainPresenter
 import com.robin.firstkotlinproject.ui.screens.detail.ArtistActivity
 import com.robin.firstkotlinproject.ui.util.navigate
 import com.robin.firstkotlinproject.ui.view.MainView
 import javax.inject.Inject
 
+/**
+ * Main application screen. This is the app entry point.
+ */
 class MainActivity : BaseActivity<MainLayout>(), MainView {
 
     override val ui = MainLayout()

@@ -1,7 +1,7 @@
 package com.robin.firstkotlinproject.ui.view
 
-import com.robin.firstkotlinproject.ui.entity.ArtistDetail
-import com.robin.firstkotlinproject.ui.entity.ImageTitle
+import com.robin.firstkotlinproject.ui.model.ArtistDetail
+import com.robin.firstkotlinproject.ui.model.ImageTitle
 
 /**
  * Created by Robin Yang on 11/20/17.

@@ -1,9 +1,9 @@
 package com.robin.firstkotlinproject
 
 import android.app.Application
-import com.robin.firstkotlinproject.di.ApplicationComponent
-import com.robin.firstkotlinproject.di.ApplicationModule
-import com.robin.firstkotlinproject.di.DaggerApplicationComponent
+import com.robin.firstkotlinproject.ui.di.ApplicationComponent
+import com.robin.firstkotlinproject.ui.di.ApplicationModule
+import com.robin.firstkotlinproject.ui.di.DaggerApplicationComponent
 
 /**
  * Created by Robin Yang on 10/27/17.

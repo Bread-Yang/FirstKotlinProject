@@ -1,6 +1,6 @@
 package com.robin.firstkotlinproject.domain.interactor.event
 
-import com.robin.firstkotlinproject.domain.entity.Artist
+import com.robin.firstkotlinproject.domain.model.Artist
 import com.robin.firstkotlinproject.domain.interactor.base.Event
 
 /**

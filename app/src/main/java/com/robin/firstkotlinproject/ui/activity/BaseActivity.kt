@@ -3,11 +3,11 @@ package com.robin.firstkotlinproject.ui.activity
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.robin.firstkotlinproject.App
-import com.robin.firstkotlinproject.di.ApplicationComponent
+import com.robin.firstkotlinproject.ui.di.ApplicationComponent
 import org.jetbrains.anko.setContentView
 
 /**
- * Created by Robin Yang on 10/27/17.
+ * Base [AppCompatActivity] class for every Activity in this application.
  */
 abstract class BaseActivity<out UI : ActivityAnkoComponent<out AppCompatActivity>> : AppCompatActivity() {
 

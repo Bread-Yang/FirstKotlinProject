@@ -4,7 +4,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.Gravity
 import android.widget.TextView
 import com.robin.firstkotlinproject.ui.activity.ViewAnkoComponent
-import com.robin.firstkotlinproject.ui.entity.TrackDetail
+import com.robin.firstkotlinproject.ui.model.TrackDetail
 import org.jetbrains.anko.*
 
 /**

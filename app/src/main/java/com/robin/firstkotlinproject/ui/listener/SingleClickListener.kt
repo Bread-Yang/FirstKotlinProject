@@ -6,7 +6,6 @@ import android.view.ViewConfiguration
 /**
  * Prevents from double clicks on a view, which could otherwise lead to unpredictable states.Useful
  * while transitioning to another activity for instance.
- * Created by Robin Yang on 11/20/17.
  */
 
 class SingleClickListener(val click: (v: View) -> Unit) : View.OnClickListener {
