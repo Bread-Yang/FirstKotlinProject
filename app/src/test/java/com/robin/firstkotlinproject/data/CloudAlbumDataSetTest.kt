@@ -2,10 +2,11 @@ package com.robin.firstkotlinproject.data
 
 import com.robin.firstkotlinproject.data.lastfm.LastFmService
 import com.robin.firstkotlinproject.data.lastfm.entity.*
-import com.robin.firstkotlinproject.domain.model.mapper.AlbumMapper
 import com.robin.firstkotlinproject.data.mock.FakeCall
 import com.robin.firstkotlinproject.data.repository.dataset.CloudAlbumDataSet
+import com.robin.firstkotlinproject.domain.model.mapper.AlbumMapper
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertNull
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -66,5 +67,46 @@ class CloudAlbumDataSetTest {
         // then
         verify(lastFmService).requestAlbum(albumMbid)
         assertEquals(albumMapper.transform(lastFmResponse.album), album)
+    }
+
+    @Test
+    fun testRequestAlbum_unknownAlbum() {
+        // Given
+        val unknownAlbumResponse = LastFmResponse(LastFmResult(LastFmArtistMatches(emptyList())), artist, topAlbums,
+                LastFmArtistList(emptyList()), unknownAlbumDetail)
+        `when`(lastFmService.requestAlbum(albumMbid)).thenReturn(FakeCall(Response.success(unknownAlbumResponse), null))
+
+        // when
+        val album = cloudAlbumDataSet.requestAlbum(albumMbid)
+
+        // then
+        verify(lastFmService).requestAlbum(albumMbid)
+        assertNull(album)
+    }
+
+    @Test
+    fun testRequestTopAlbums_byArtistMbid() {
+        // when
+        val albums = cloudAlbumDataSet.requestTopAlbums(artistMbid, null)
+
+        // then
+        verify(lastFmService).requestAlbums(artistMbid, "")
+        assertEquals(albumMapper.transform(lastFmResponse.topAlbums.albums), albums)
+    }
+
+    @Test
+    fun testRequestTopAlbums_byArtistName() {
+        // when
+        val albums = cloudAlbumDataSet.requestTopAlbums(null, artistName)
+
+        // then
+        verify(lastFmService).requestAlbums("", artistName)
+        assertEquals(albumMapper.transform(lastFmResponse.topAlbums.albums), albums)
+    }
+
+    @Test
+    fun testRequestTopAlbums_byArtistNameAndMbid() {
+        // when
+        val albums = cloudAlbumDataSet.request
     }
 }

@@ -13,6 +13,14 @@ import kotlin.properties.Delegates
  */
 class AutofitRecyclerView : RecyclerView {
 
+    /**
+     * notNull解释:
+     *
+     *  var max: Int by Delegates.notNull()
+     *  // println(max) // will fail with IllegalStateException
+     *  max = 10
+     *  println(max) // 10
+     */
     private var manager: GridLayoutManager by Delegates.notNull()
     var columnWidth = -1
 
@@ -50,6 +58,8 @@ class AutofitRecyclerView : RecyclerView {
 }
 
 fun ViewManager.autoFitRecycler(theme: Int = 0) = autoFitRecycler(theme) {}
+
+// Kotlin 中 双冒号操作符 表示把一个方法当做一个参数，传递到另一个方法中进行使用，通俗的来讲就是引用一个方法
 inline fun ViewManager.autoFitRecycler(theme: Int = 0,
                                        init: AutofitRecyclerView.() -> Unit) =
         ankoView(::AutofitRecyclerView, theme, init)

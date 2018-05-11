@@ -25,7 +25,7 @@ class ImageTitleAdapter(listener: (ImageTitle) -> Unit) :
 
     override fun onCreateComponent(parent: RecyclerView) = Component(parent)
 
-    fun findPositionById(id: String): Int = items.withIndex().first{it.value.id == id}.index
+    fun findPositionById(id: String): Int = items.withIndex().first { it.value.id == id }.index
 
     class Component(override val view: RecyclerView) : ViewAnkoComponent<RecyclerView> {
 

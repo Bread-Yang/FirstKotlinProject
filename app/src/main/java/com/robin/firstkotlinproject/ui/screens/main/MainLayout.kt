@@ -25,24 +25,23 @@ class MainLayout : ActivityAnkoComponent<MainActivity> {
     lateinit var recycler: RecyclerView
     override lateinit var toolbar: Toolbar
 
-    override fun createView(ui: AnkoContext<MainActivity>): View =
-            with(ui) {
+    override fun createView(ui: AnkoContext<MainActivity>): View = with(ui) {
 
-                coordinatorLayout {
+        coordinatorLayout {
 
-                    appBarLayout {
-                        toolbar = themedToolbar(R.style.ThemeOverlay_AppCompat_Dark_ActionBar) {
-                            backgroundResource = R.color.primary
-                        }.lparams(width = matchParent) {
-                            scrollFlags = SCROLL_FLAG_SNAP or SCROLL_FLAG_SCROLL or SCROLL_FLAG_ENTER_ALWAYS
-                        }
-                    }.lparams(width = matchParent)
-
-                    recycler = autoFitRecycler()
-                            .apply(AutofitRecyclerView::style)
-                            .lparams(matchParent, matchParent) {
-                                behavior = AppBarLayout.ScrollingViewBehavior()
-                            }
+            appBarLayout {
+                toolbar = themedToolbar(R.style.ThemeOverlay_AppCompat_Dark_ActionBar) {
+                    backgroundResource = R.color.primary
+                }.lparams(width = matchParent) {
+                    scrollFlags = SCROLL_FLAG_SNAP or SCROLL_FLAG_SCROLL or SCROLL_FLAG_ENTER_ALWAYS
                 }
-            }
+            }.lparams(width = matchParent)
+
+            recycler = autoFitRecycler()
+                    .apply(AutofitRecyclerView::style)
+                    .lparams(matchParent, matchParent) {
+                        behavior = AppBarLayout.ScrollingViewBehavior()
+                    }
+        }
+    }
 }
